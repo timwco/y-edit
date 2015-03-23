@@ -1,0 +1,70 @@
+<html>
+<head></head>
+<body>
+	<h1>Y! Edit</h1>
+	<h3>Installation Instructions:</h3>
+	<p>First... you will need the greasemonkey extension for firefox. Restart your browser after the install. <a href="https://addons.mozilla.org/en-US/firefox/addon/748">https://addons.mozilla.org/en-US/firefox/addon/748</a></p>
+	
+
+	<p>Click <a href="y_edit.user.js">Install Script</a> and click "install".</p> 	
+	
+	<p>NOTES: Either a dialog box comes up or a bar (similar to popup blocked bar) will show at the top of the window. If the top bar shows, you may have to go to the "tools" menu and then "greasemonkey" and select "install"</p>
+
+	<h3>Current Features:</h3>
+	<ul>
+		<li>Fixed control panel - edit, cut, replace, etc</li>
+		<li>Panel buttons have hotkeys [alt + shift + ?]</li>
+		<li>Added Contents, Variables, Files, and Templates buttons to fixed panel</li>
+		<li>Expandable stack &amp; controls added to the fixed panel</li>
+
+		<li>Stack now automatically expands if the last command was "new", "copy", or "cut"</li>
+		<li>Current template name and expandable "called by" template list added to panel</li>
+		<li><s>Screen centers on current rtml object (second bold element on page)</s> Screen scrolls to last offset(Y) on current template</li>
+		<li>Focus is placed on the first link of code below the scroll offset (or if a piece of code is currently selected, the link directly following it) for easy access to tab through and select other links</li>
+		<li>On "edit" and "new" screens focus will be placed in the first text input box</li>
+
+		<li>On "new" screen the key ';' can be typed into the input box to start operator matching (ex: type ';re2' for "render".) Fuzzy matching / typo correction exists, but is a work in progress.</li>
+		<li>On "new" screen if you double click on operator in select box, it will add it to the current stack</li>
+		<li>On the "file" upload screen, the file name input box will automatically populate with name of the file selected</li>
+		<li>On the "image" upload screen, the form will automatically submit after the file is selected</li>
+		<li>Quick links for home, do-not-delete, advanced-paging-variables, and previous template</li>
+		<li>Stack controls have hotkeys</li>
+
+		<li>Save hotkey on variable and edit pages</li>
+		<li>Upload hotkey on lib page</li>
+	</ul>
+	<h3>To do list:</h3>
+	<ul>
+		<li>Cover rtml interface with an ajax shell - allowing operations to happen realtime so page loading can catch up as needed</li>
+		<li>Personal preferences - set: positioning (top, bottom, middle), keymapping, click (vs hover) for flyouts, etc (can be done with gm_vars)</li>
+
+		<li>Add template list flyout (can be done with gm_vars and yhst)</li>
+		<li>Source highlighting for tempate pages</li>
+		<li></li>
+	</ul>
+	<h3>Keymappings:</h3>
+	<ul>
+		<li>edit => 'e'</li>
+
+		<li>cut => 'x'</li>
+		<li>copy => 'c'</li>
+		<li>new => 'a'</li>
+		<li>paste after => 'f'</li>
+		<li>paste within => 'v'</li>
+		<li>replace => 'r'</li>
+
+		<li>select first line in stack => 's' </li>
+		<li>delete line in stack => 'd' </li>
+		<li>move line to top of stack => 't' </li>
+		<li>(on Files page) upload => 'u' </li>
+		<li>(on Variables/Edit pages) save => 's' </li>
+	</ul>
+
+	<h3>Removal Options:</h3>
+	<p>If you don't like it... click the little monkey face in the statusbar and it will simply turn off greasemonkey or right click and uncheck "Clippy" to turn off just that script.</p>
+	<p>To uninstall the script, right click the said monkey face and click "manage user scripts...", then select "Clippy" from the list on the left and click "uninstall".</p>
+	
+	<small>This was originally created by Jake Swartwood, but I have modified it to run faster and added a few features. Thanks!</small>
+</body>
+
+</html>
